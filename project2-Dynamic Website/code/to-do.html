@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="img/logo.png" alt="logo" width="100px"style="margin-left:140px; " >
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" >Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="to-do.html" style="color:black; font-family:lato_b;font-size: 17px;">Homework Shedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="newcal.html"style="color:black;font-family:lato_b;font-size: 17px;">Calculator</a>
+        </li>
+        <li class="nav-item " style="margin-left: 500px;">
+            <input type="color" id="color">
+            <button id="bt" onclick="changecolor()" style="background-color: #46C4E4;color: #666666;border: none;">changeColor</button>
+                <select name="font_family" id="font_family" onchange="changeFontStyle (this)" style="border: none;background-color:#46C4E4;color: #666666;">
+                    <option value="Arial" selected>Arial</option>
+                    <option value="Verdana" selected>Verdana</option>
+                    <option value="Helvetica" selected>Helvetica</option>
+                    <option value="Times New Roman" selected>Times New Roman</option>
+                    <option value="Courier New" selected>Courier New</option>
+                </select>
+                <select name="font_size" id="font_size"onchange="onsize(this)" style="border:none; background-color:#46C4E4 ;color: #666666;" >
+                    <option value="8pt">8pt</option>
+                    <option value="10pt">10pt</option>
+                    <option value="12pt" selected>12pt</option>
+                    <option value="14pt">14pt</option>
+                    <option value="16pt">16pt</option>
+                    <option value="29pt">29pt</option>
+                </select>
+          </li>
+      </ul>
+    </div>
+  </nav>
+      <!--navbar-->
+
+      <!--Slide Img-->
+
+      <div id="slider">
+        <figure>
+          <img src="img/im2.jpg">
+          <img src="img/img1.jpg">
+                <img src="img/img4.jpg">
+                <img src="img/img5.jpg">
+          <img src="img/img6.jpg">
+    
+        </figure>
+      </div>
+    
+    
+    <br><br><br>
+
+      <!--End Slide Img-->
+
+      <!--todo-->
+      <div id="todos-list">
+      <textarea id="task" type="text" class="inputlist" placeholder="Add Your HomeWorks"></textarea>
+      <button id="add" class="btn">Add</button>
+      </div>
+      <hr class="hr1">
+      <div id="todos" class="todolist"></div>
+      <button id="Clear" class="btn1">Clear All</button>
+      
+       <!--todo-->
+        <script src="js/main.js"></script>
+        <script src="https://kit.fontawesome.com/5d17f174fb.js" crossorigin="anonymous"></script>
+</body>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue"> 
+
+    <!-- Footer -->
+    <footer>
+      <div style="margin-top: 500px; background-color:#666666;height:150px; color: white;text-align: center; padding-top: 20px;">  
+          Created by Marina, Kawthar and Tala
+      </div>
+  
+  
+  </footer>
+  
+  <!-- End Footer -->
+
+
+</html>
